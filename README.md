@@ -1,7 +1,7 @@
 # zuri-redesign
-##Zuri Landing Page Design
+###Zuri Landing Page Design
 
-##How to contribute
+#3#How to contribute
 
 Step 1: Click on Fork at the top right corner
 
