@@ -15,7 +15,7 @@ Step 5: After making changes to the code. <code>git add .</code>
 
 Step 6: Run <code>git commit -m"your commit message"</code>
 
-Step 7: To update your repo with the remote, run <code>git pull upstream main</code>
+Step 7: Ensure you update your repo with the remote to avoid conflict, to update your repo with the remote, run <code>git pull upstream main</code>
 
 Step 8: Run <code>git commit -m"your commit message"</code>
 
