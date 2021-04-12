@@ -18,7 +18,7 @@
     </section>
 
     <section class="right-pane">
-        <form action="./" method="post" class="form-container">
+        <form action="./" method="post" class="auth form-container">
             <h4 class="title-invert">Sign In</h4>
             <div>
                 <input type="email" name="" id="" placeholder="Email">
@@ -29,7 +29,39 @@
             <div>
                 <input type="submit" name="" id="" value="Sign in">
             </div>
-            <p class="desc-invert">New to this platform? <a href="./signup.html">Sign up</a></p>
+            <p class="desc-invert">New to this platform? <a href="./signup.html" data-class='form-container2'>Sign up</a></p>
+        </form>
+
+        <form action="./" method="post" class="auth form-container2" id="hide">
+            <h4 class="title-invert">Sign Up</h4>
+            <div>
+                <input type="text" name="" id="" placeholder="Fullname">
+            </div>
+            <div>
+                <input type="text" name="" id="" placeholder="Username">
+            </div>
+            <div>
+                <input type="email" name="" id="" placeholder="Email">
+            </div>
+            <div>
+                <input type="password" name="" id="" placeholder="Create Password">
+            </div>
+            <div>
+                <input type="password" name="" id="" placeholder="Confirm Password">
+            </div>
+            <div>
+                <select name="" id="">
+                    <option value="">-- Select Track --</option>
+                    <option value="">FrontEnd</option>
+                    <option value="">BackEnd</option>
+                    <option value="">UI / UX</option>
+                    <option value="">Mobile</option>
+                </select>
+            </div>
+            <div>
+                <input type="submit" name="" id="" value="Sign up">
+            </div>
+            <p class="desc-invert">Already a member? <a href="./index.html" data-class='form-container'>Sign In</a></p>
         </form>
     </section>
     <!-- Code here: end -->

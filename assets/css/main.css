@@ -193,3 +193,5 @@ input[type="submit"] {
 div input {
     margin: 10px 0;
 }
+
+#hide { display: none; }
