@@ -1,13 +1,9 @@
 # zuri-redesign
-<<<<<<< HEAD
-###Zuri Landing Page Design
 
-###How to contribute
-=======
 ### Zuri Landing Page Design
+=======
 
 ### How to contribute
->>>>>>> 96ba7be7085a8de0f4484aadc6ac865dd56073fb
 
 Step 1: Click on Fork at the top right corner
 
