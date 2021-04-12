@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,39 +8,67 @@
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/custom.css">
 </head>
-
 <body>
-
+    
     <!-- Code here: start -->
-    <main class="container">
-        <aside class="welcome__back">
-            <div class="welcome__back">
-                <img src="assets/images/placeholder.svg" alt="welcome back placeholder">
-                <h4 class="welcome__head">
-                    Welcome back :)
-                </h4>
-                <p>We find the best talents and give them opportunity to excel.</p>
-            </div>
-        </aside>
+    <section class="left-pane">
+        <img src="./assets/images/placeholder.svg" alt="Placeholder">
+        <div class="note-holder">
+            <h1 class="title">Welcome Back :)</h1>
+            <p class="desc">We find the best talents and give them opportunity to excel.</p>
+        </div>
+    </section>
 
-        <section class="signIn">
-            <div class="signIn__form">
-                <h4>Sign In</h4>
-                <form class="signIn__form" action="">
-                    <input class="input__text" type="text" placeholder="Email">
-                    <input class="input__text" type="text" placeholder="Confirm Password">
-                    <button class="signIn__btn">Sign In</button>
-                </form>
-                <p>
-                    New to this platform? <span><a href="#signup">Sign up</a></span>
-                </p>
+    <section class="right-pane">
+        <form action="./" method="post" class="auth form-container">
+            <h4 class="title-invert">Sign In</h4>
+            <div>
+                <input type="email" name="" id="" placeholder="Email">
             </div>
-        </section>
-    </main>
+            <div>
+                <input type="password" name="" id="" placeholder="Password">
+            </div>
+            <div>
+                <input type="submit" name="" id="" value="Sign in">
+            </div>
+            <p class="desc-invert">New to this platform? <a href="./signup.html" data-class='form-container2'>Sign up</a></p>
+        </form>
+
+        <form action="./" method="post" class="auth form-container2" id="hide">
+            <h4 class="title-invert">Sign Up</h4>
+            <div>
+                <input type="text" name="" id="" placeholder="Fullname">
+            </div>
+            <div>
+                <input type="text" name="" id="" placeholder="Username">
+            </div>
+            <div>
+                <input type="email" name="" id="" placeholder="Email">
+            </div>
+            <div>
+                <input type="password" name="" id="" placeholder="Create Password">
+            </div>
+            <div>
+                <input type="password" name="" id="" placeholder="Confirm Password">
+            </div>
+            <div>
+                <select name="" id="">
+                    <option value="">-- Select Track --</option>
+                    <option value="">FrontEnd</option>
+                    <option value="">BackEnd</option>
+                    <option value="">UI / UX</option>
+                    <option value="">Mobile</option>
+                </select>
+            </div>
+            <div>
+                <input type="submit" name="" id="" value="Sign up">
+            </div>
+            <p class="desc-invert">Already a member? <a href="./index.html" data-class='form-container'>Sign In</a></p>
+        </form>
+    </section>
     <!-- Code here: end -->
 
     <script src="./assets/js/jquery.js"></script>
     <script src="./assets/js/main.js"></script>
 </body>
-
 </html>

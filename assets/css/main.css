@@ -1,143 +1,197 @@
 /* Main Class Style file */
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
-
-/* ==============
-    General styles
-    ============= */
 
 :root {
-  --base-color: #2f80ed;
+    --base-color: #2F80ED;
+    --white: #FFFFFF;
+    --gray: #402E2E;
+    --light-gray: #BDBDBD;
+}
+body, html { margin: 0 auto; }
+
+/* Biotif Font Face Included */
+@font-face {
+    font-family: 'biotif-black';
+    src: url('../font/Biotif-Black.ttf') format('truetype');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'biotif-black-italic';
+    src: url('../font/Biotif-BlackItalic.ttf') format('truetype');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'biotif-bold';
+    src: url('../font/Biotif-Bold.ttf') format('truetype');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'biotif-bold-italics';
+    src: url('../font/Biotif-BoldItalic.ttf') format('truetype');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'biotif-book';
+    src: url('../font/Biotif-Book.ttf') format('truetype');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'biotif-book-italics';
+    src: url('../font/Biotif-BookItalic.ttf') format('truetype');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'biotif-extra-bold';
+    src: url('../font/Biotif-ExtraBold.ttf') format('truetype');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'biotif-extra-bold-italics';
+    src: url('../font/Biotif-ExtraBoldItalic.ttf') format('truetype');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'biotif-light';
+    src: url('../font/Biotif-Light.ttf') format('truetype');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'biotif-light-italics';
+    src: url('../font/Biotif-LightItalic.ttf') format('truetype');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'biotif-medium';
+    src: url('../font/Biotif-Medium.ttf') format('truetype');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'biotif-medium-italics';
+    src: url('../font/Biotif-MediumItalic.ttf') format('truetype');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'biotif-regular';
+    src: url('../font/Biotif-Regular.ttf') format('truetype');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'biotif-book';
+    src: url('../font/Biotif-Book.ttf') format('truetype');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'biotif-semibold';
+    src: url('../font/Biotif-SemiBold.ttf') format('truetype');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'biotif-black';
+    src: url('../font/Biotif-Black.ttf') format('truetype');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'biotif-bold';
+    src: url('../font/Biotif-Bold.ttf') format('truetype');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'biotif-extrabold';
+    src: url('../font/Biotif-ExtraBold.ttf') format('truetype');
+    font-style: normal;
 }
 
-/* @font-face {
-  font-family: "Biotif";
-  src: url(assets\fonts\Biotif-Medium.ttf);
-} */
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* Style Content */
+section.left-pane,
+section.right-pane {
+    display: inline-table;
+    height: auto;
+    min-height: 70vh;
 }
 
-body {
-  font-family: "Open Sans", sans-serif;
+section.left-pane {
+    width: 30%;
+    padding: 125px 1%;
+    background-color: var(--base-color);
+    text-align: left;
 }
 
-img {
-  max-width: 100%;
-  padding-bottom: 1em;
+section.right-pane { 
+    width: 67%;
+    position: absolute;
+    height: 100vh;
+    margin-top: 0 auto; 
+    margin-left:0 auto;
 }
 
-a {
-  text-decoration: none;
+.title {
+    font-family: 'biotif-bold';
+    color: var(--white);
+}
+.desc {
+    font-family: 'biotif-light';
+    color: var(--white);
+    font-weight: 200;
 }
 
-/* ==============
-    Typography
-    ============= */
+form.form-container,
+form.form-container2 {
+    display: inline-block;
+    height: auto;
+    min-height: 300px;
+    width: 55%;
+    margin-left: 23%;
+    background-color: var(--white);
+}
+form.form-container { margin-top: 20%; }
 
-aside h4 {
-  font-weight: 800;
-  font-size: 40px;
-  padding-bottom: 0.5em;
+form.form-container2 { margin-top: 12%; }
+
+h4.title-invert {
+    font-family: 'biotif-bold';
+    color: var(--gray);
+    font-size: 28px;
 }
 
-aside p {
-  font-size: 20px;
-  letter-spacing: 1px;
+p.desc-invert {
+    font-family: 'biotif-light';
+    color: var(--gray);
+    font-weight: 200;
 }
 
-section h4 {
-  font-size: 30px;
-  padding-bottom: 1em;
-}
-
-section p {
-  font-size: 20px;
-  font-weight: 600;
-  letter-spacing: 0.5px;
+select,
+input {
+    width: 100%;
+    height: 20px;
+    padding: 10px;
+    border: 2px solid var(--light-gray);
+    border-radius: 5px;
 }
 
 input::placeholder {
-  color: #402e2e;
-  font-size: 15px;
-  font-weight: 400;
-  letter-spacing: 1px;
+    font-size: 14px;
+    font-family: 'biotif-light';
+}
+select {
+    border: 1px none;
+    width: 105%;
+    height: 40px;
+    padding: 10px;
+    font-size: 14px;
+    font-family: 'biotif-light';
+}
+input[type="submit"] {
+    background-color: var(--base-color);
+    border: 1px none;
+    width: 105%;
+    height: 40px;
+    padding: 10px;
+    font-size: 18px;
+    color: var(--white);
+    font-family: 'biotif-bold';
 }
 
-/* ==============
-    Layout
-    ============= */
-.container {
-  display: flex;
+div input {
+    margin: 10px 0;
 }
 
-aside {
-  width: 35%;
-  background-color: var(--base-color);
-  height: 100vh;
-  padding: 8em 2em;
-  color: whitesmoke;
-}
-
-section {
-  width: 65%;
-  height: 100vh;
-  padding: 220px 200px;
-  color: #402e2e;
-}
-
-section .signIn__form {
-  display: flex;
-  flex-direction: column;
-}
-
-input {
-  padding: 0.8em;
-  margin-bottom: 2em;
-  border: 2px solid #bdbdbd;
-  border-radius: 4px;
-}
-
-button {
-  background-color: var(--base-color);
-  border: none;
-  border-radius: 4px;
-  color: white;
-  padding: 15px 32px;
-  margin-bottom: 1em;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 20px;
-  letter-spacing: 1px;
-}
-
-button:hover {
-  cursor: pointer;
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
-}
-
-section a {
-  position: relative;
-  color: #402e2e;
-}
-
-section a::after {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 2px;
-  background-color: #402e2e;
-  bottom: -3px;
-  right: -1px;
-}
-
-section a:hover {
-  color: var(--base-color);
-}
-
-section a:hover::after {
-  background: var(--base-color);
-}
+#hide { display: none; }
