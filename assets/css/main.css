@@ -8,6 +8,10 @@
 }
 body, html { margin: 0 auto; }
 
+body {
+    overflow-x: hidden;
+}
+
 /* Biotif Font Face Included */
 @font-face {
     font-family: 'biotif-black';
@@ -105,18 +109,23 @@ section.left-pane,
 section.right-pane {
     display: inline-table;
     height: auto;
-    min-height: 70vh;
+    min-height: 100vh;
+}
+
+.left-pane img {
+    text-align: center;
+    justify-content: center;
 }
 
 section.left-pane {
-    width: 30%;
+    width: 30vw;
     padding: 125px 1%;
     background-color: var(--base-color);
     text-align: left;
 }
 
 section.right-pane { 
-    width: 67%;
+    width: 67vw;
     position: absolute;
     height: 100vh;
     margin-top: 0 auto; 
@@ -125,12 +134,14 @@ section.right-pane {
 
 .title {
     font-family: 'biotif-bold';
+    font-size: 40px;
     color: var(--white);
 }
 .desc {
     font-family: 'biotif-light';
     color: var(--white);
     font-weight: 200;
+    font-size: 15px;
 }
 
 form.form-container,
@@ -195,3 +206,31 @@ div input {
 }
 
 #hide { display: none; }
+
+.note-holder {
+    text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+    section.left-pane {
+        padding: 100px 1%;
+        width: 40%;
+    }
+
+    section.right-pane {
+        padding: 105px 50px;
+    }
+
+    .title {
+        font-family: 'biotif-bold';
+        font-size: 30px;
+        color: var(--white);
+    }
+    .desc {
+        font-size: 13px;
+    }
+
+    .left-pane img {
+        width: 30rem;
+    }
+}
