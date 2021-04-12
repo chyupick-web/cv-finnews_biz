@@ -3,6 +3,8 @@
 :root {
     --base-color: #2F80ED;
     --white: #FFFFFF;
+    --gray: #402E2E;
+    --light-gray: #BDBDBD;
 }
 body, html { margin: 0 auto; }
 
@@ -10,109 +12,91 @@ body, html { margin: 0 auto; }
 @font-face {
     font-family: 'biotif-black';
     src: url('../font/Biotif-Black.ttf') format('truetype');
-    font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'biotif-black-italic';
     src: url('../font/Biotif-BlackItalic.ttf') format('truetype');
-    font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'biotif-bold';
     src: url('../font/Biotif-Bold.ttf') format('truetype');
-    font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'biotif-bold-italics';
     src: url('../font/Biotif-BoldItalic.ttf') format('truetype');
-    font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'biotif-book';
     src: url('../font/Biotif-Book.ttf') format('truetype');
-    font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'biotif-book-italics';
     src: url('../font/Biotif-BookItalic.ttf') format('truetype');
-    font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'biotif-extra-bold';
     src: url('../font/Biotif-ExtraBold.ttf') format('truetype');
-    font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'biotif-extra-bold-italics';
     src: url('../font/Biotif-ExtraBoldItalic.ttf') format('truetype');
-    font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'biotif-light';
     src: url('../font/Biotif-Light.ttf') format('truetype');
-    font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'biotif-light-italics';
     src: url('../font/Biotif-LightItalic.ttf') format('truetype');
-    font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'biotif-medium';
     src: url('../font/Biotif-Medium.ttf') format('truetype');
-    font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'biotif-medium-italics';
     src: url('../font/Biotif-MediumItalic.ttf') format('truetype');
-    font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'biotif-regular';
     src: url('../font/Biotif-Regular.ttf') format('truetype');
-    font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'biotif-book';
     src: url('../font/Biotif-Book.ttf') format('truetype');
-    font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'biotif-semibold';
     src: url('../font/Biotif-SemiBold.ttf') format('truetype');
-    font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'biotif-black';
     src: url('../font/Biotif-Black.ttf') format('truetype');
-    font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'biotif-bold';
     src: url('../font/Biotif-Bold.ttf') format('truetype');
-    font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'biotif-extrabold';
     src: url('../font/Biotif-ExtraBold.ttf') format('truetype');
-    font-weight: normal;
     font-style: normal;
 }
 
@@ -121,19 +105,91 @@ section.left-pane,
 section.right-pane {
     display: inline-table;
     height: auto;
-    min-height: 100vh;
+    min-height: 70vh;
 }
 
 section.left-pane {
     width: 30%;
-    padding: .5%;
+    padding: 125px 1%;
     background-color: var(--base-color);
-    text-align: center;
+    text-align: left;
 }
 
-section.right-pane { width: 70%; }
+section.right-pane { 
+    width: 67%;
+    position: absolute;
+    height: 100vh;
+    margin-top: 0 auto; 
+    margin-left:0 auto;
+}
 
 .title {
     font-family: 'biotif-bold';
     color: var(--white);
+}
+.desc {
+    font-family: 'biotif-light';
+    color: var(--white);
+    font-weight: 200;
+}
+
+form.form-container,
+form.form-container2 {
+    display: inline-block;
+    height: auto;
+    min-height: 300px;
+    width: 55%;
+    margin-left: 23%;
+    background-color: var(--white);
+}
+form.form-container { margin-top: 20%; }
+
+form.form-container2 { margin-top: 12%; }
+
+h4.title-invert {
+    font-family: 'biotif-bold';
+    color: var(--gray);
+    font-size: 28px;
+}
+
+p.desc-invert {
+    font-family: 'biotif-light';
+    color: var(--gray);
+    font-weight: 200;
+}
+
+select,
+input {
+    width: 100%;
+    height: 20px;
+    padding: 10px;
+    border: 2px solid var(--light-gray);
+    border-radius: 5px;
+}
+
+input::placeholder {
+    font-size: 14px;
+    font-family: 'biotif-light';
+}
+select {
+    border: 1px none;
+    width: 105%;
+    height: 40px;
+    padding: 10px;
+    font-size: 14px;
+    font-family: 'biotif-light';
+}
+input[type="submit"] {
+    background-color: var(--base-color);
+    border: 1px none;
+    width: 105%;
+    height: 40px;
+    padding: 10px;
+    font-size: 18px;
+    color: var(--white);
+    font-family: 'biotif-bold';
+}
+
+div input {
+    margin: 10px 0;
 }
